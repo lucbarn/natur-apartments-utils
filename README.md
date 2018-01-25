@@ -1,2 +1,3 @@
 # natur-apartments-utils
-Utility functions used in www.natur.apartments
+
+`utils.js` contains some utility functions that I wrote for www.natur.apartments
