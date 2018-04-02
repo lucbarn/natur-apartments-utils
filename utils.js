@@ -1,20 +1,20 @@
-function typewriter(s, el, cursor=undefined, i=0) {
-  if (i === 0 && cursor !== undefined) {
-    cursor.style.opacity = '1';
-    cursor.style.animationName = 'none';
+function typewriter(s, el, cursorElement, timeStep, animationName, i=0) {
+  if (i === 0 && cursorElement !== undefined) {
+    cursorElement.style.opacity = '1';
+    cursorElement.style.animationName = 'none';
   }
   el.innerHTML += s.charAt(i);
   if (i < s.length - 1) {
     window.setTimeout(function() {
-        typewriter(s, el, cursor=cursor, i=i+1);
+        typewriter(s, el, cursorElement, timeStep, animationName, i+1);
       },
-      75
+      timeStep
     );
   } else {
     el.innerHTML = s;
-    if (cursor !== undefined) {
-      cursor.style.opacity = '0';
-      cursor.style.animationName = 'blink';
+    if (cursorElement !== undefined) {
+      cursorElement.style.opacity = '0';
+      cursorElement.style.animationName = animationName;
     }
   }
 }
