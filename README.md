@@ -19,3 +19,24 @@ The function has to be used in conjunction with a css animation. In case of natu
 }
 
 <strong>isVisible()</strong> is a function that returns the percentage of the input element that is visible in the viewport. If the argument viewport is set to true, the function returns the percentage of the viewport that is covered by the input element.
+
+In the following example, the video plays only if
+at least 40% of its area is visible:
+
+```html
+<video id="video1" src="video-source"></video>
+
+<script>
+
+  const v = document.getElementById('video1');
+
+  window.onscroll = function() {
+    if (isVisible(v, 40) && v.paused) {
+      v.play();
+    } else if (!isVisible(v, 40) && !v.paused) {
+      v.pause();
+    }
+  };
+
+</script>
+```
