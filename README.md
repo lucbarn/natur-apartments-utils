@@ -6,17 +6,19 @@
 parameter specifies the frequency with which letters are added.
 The function has to be used in conjunction with a css animation. In case of natur apartments it is:
 
-@keyframes blink {  
-&nbsp;&nbsp;0% {  
-&nbsp;&nbsp;&nbsp;&nbsp;opacity: 0;  
-&nbsp;&nbsp;}  
-&nbsp;&nbsp;50% {  
-&nbsp;&nbsp;&nbsp;&nbsp;opacity: 1;  
-&nbsp;&nbsp;}  
-&nbsp;&nbsp;100% {  
-&nbsp;&nbsp;&nbsp;&nbsp;opacity: 0;  
-&nbsp;&nbsp;}  
+```css
+@keyframes blink {
+ 0% {  
+  opacity: 0;  
+ }  
+ 50% {  
+  opacity: 1;  
+ }  
+ 100% {  
+  opacity: 0;  
+ }  
 }
+```
 
 <strong>isVisible()</strong> is a function that returns the percentage of the input element that is visible in the viewport. If the argument viewport is set to true, the function returns the percentage of the viewport that is covered by the input element.
 
