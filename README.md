@@ -4,7 +4,7 @@
 
 <strong>typewriter()</strong> is a function that writes a string (s) inside a target element (el). The timeStep
 parameter specifies the frequency with which letters are added.
-The function has to be used in conjunction with a css animation. The one used on www.natur.apartments is:
+The function has to be used in conjunction with a css animation. The one used in www.natur.apartments is:
 
 ```css
 @keyframes blink {
