@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <title>map-video synchronization</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.1.0/dist/leaflet.css"
+          integrity="sha512-wcw6ts8Anuw10Mzh9Ytw4pylW8+NAD4ch3lqm9lzAsTxg0GFeJgoAtxuCLREZSC5lUXdVyo/7yfsqFjQ4S+aKw=="
+          crossorigin=""></link>
+    <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js"
+            integrity="sha512-mNqn2Wg7tSToJhvHcqfzLMU6J4mkOImSPTxVZAdo+lcPlk+GhZmYgACEe0x35K7YzW1zJ7XyJV/TT1MrdXvMcA=="
+            crossorigin=""></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div id="video-map-container">
+      <div id="map-container">
+        <div id="map"></div>
+        <div id="map-point"></div>
+      </div>
+      <video id="video" src="" controls=""></video>
+    </div>
+    <h2>Recording is: <span id="recording-status">OFF</span></h2>
+    <div id="rec-button">
+      <p>REC</p>
+    </div>
+    <h2>Activate video-map synchronization</h2>
+    <div id="toggle-bar">
+      <div id="toggle-bar-left"></div>
+      <div id="toggle-switch"></div>
+      <div id="toggle-bar-right"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

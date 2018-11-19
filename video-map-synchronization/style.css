@@ -1,0 +1,130 @@
+body {
+  text-align: center;
+}
+
+#video-map-container {
+  position: relative;
+  width: 90vw;
+  /*
+  height = 90vw * 0.6 * (9 / 16) = 30.375vw
+  90vw * 0.6 = video width
+  the video format is assumed to be 16:9
+  */
+  height: 30.375vw;
+  display: flex;
+  margin: auto;
+}
+
+#map-container {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#map {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 200%;
+  height: 200%;
+}
+
+#map-point {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: orange;
+  z-index: 10000;
+}
+
+#video {
+  position: relative;
+  width: 60%;
+  height: 100%;
+}
+
+#recording-status {
+  color: red;
+}
+
+#rec-button {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 2px solid red;
+  border-radius: 50%;
+  margin: 50px auto;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+}
+
+#rec-button > p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: red;
+  margin: 0px;
+}
+
+#rec-button:hover {
+  cursor: pointer;
+}
+
+#rec-button:active {
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+
+#toggle-bar {
+  position: relative;
+  width: 200px;
+  height: 20px;
+  margin: 100px auto;
+  background-color: blue;
+}
+
+#toggle-bar-left {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: blue;
+  z-index: 1;
+}
+
+#toggle-bar-right {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: blue;
+  z-index: 1;
+}
+
+#toggle-switch {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: purple;
+  transition: all 1s;
+  z-index: 2;
+}
+
+#toggle-switch:hover {
+  cursor: pointer;
+}
