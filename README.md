@@ -1,4 +1,4 @@
-# video-map-synchronization
+# video-map-tracking
 The aim of `video-map.html` is to show on a map the position in a video, such as the position of a mountain bike rider who is recording the video, or simply someone who is walking on the street.
 
 To see an implementation of this video-map synchronization, visit http://www.natur.apartments/en/map
